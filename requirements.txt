@@ -1,0 +1,46 @@
+prometheus-fastapi-instrumentator
+slowapi
+tldextract
+keras_preprocessing
+google-generativeai
+
+# --- Core Framework ---
+fastapi
+uvicorn[standard]
+pydantic
+
+# --- Database ---
+sqlalchemy
+
+# --- Authentication & Security ---
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart
+bcrypt==3.2.2  # pinned to match passlib 1.7.4 — do not bump without testing (passlib 1.7.4 + bcrypt 4.x emits warnings)
+cryptography>=42.0.0,<46.0.0
+pyzipper       # AES-encrypted ZIP for defanged malware quarantine
+
+# --- AI & Data Science ---
+numpy
+pandas
+scikit-learn
+tensorflow
+# (لو بتستخدم PyTorch للشات بوت ضيف: torch)
+
+# --- Web Scraping & Requests ---
+requests
+httpx          # async HTTP client — required for non-blocking VirusTotal calls
+beautifulsoup4
+aiofiles
+
+# --- PDF Generation ---
+reportlab
+fpdf
+
+# --- Utilities ---
+python-dotenv
+
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
